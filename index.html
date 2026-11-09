@@ -1,0 +1,27 @@
+<!DOCTYPE html> <!--tells the browser that the document is an html file-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> <!--allows for special characters-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--scaling for phones-->
+        <title>Language Practice</title> <!--title-->
+        <link rel="stylesheet" href="styles.css"> <!--links stylesheet-->
+    </head>
+    <body>
+        <h1>Language Practice</h1>
+        <button class="lang-btn active" data-language="spanish" data-voice="es-ES">Spanish</button> <!--button for spanish-->
+        <button class="lang-btn" data-language="german" data-voice="de-DE">German</button> <!--button for german-->
+        <button class="lang-btn" data-language="afrikaans" data-voice="af-ZA">Afrikaans</button> <!--button for afrikaans-->
+        <div id="card">  <!--card container-->
+            <p id="card-text"></p>
+        </div>
+        <button id="next-btn">Next</button>
+        <button id="speak-btn">Listen</button>
+        <label for="answer-input">Type the meaning:</label>
+        <input type="text" id="answer-input" placeholder="Your answer">
+        <button id="check-btn">Check</button>
+        <p id="feedback"></p>
+        <p id="score-display">Score: 0</p>
+        <button id="reset-btn">Reset Score</button>
+        <script src="script.js"></script>
+    </body>
+</html>
